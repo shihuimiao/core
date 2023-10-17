@@ -819,7 +819,7 @@ SENSORS: dict[str, tuple[TuyaSensorEntityDescription, ...]] = {
             native_unit_of_measurement=UnitOfElectricPotential.VOLT,
             subkey="voltage",
         ),
-        SmartLifeSensorEntityDescription(
+        TuyaSensorEntityDescription(
             key=DPCode.ADD_ELE,
             name="add ele",
             device_class=SensorDeviceClass.ENERGY,
@@ -827,21 +827,21 @@ SENSORS: dict[str, tuple[TuyaSensorEntityDescription, ...]] = {
             native_unit_of_measurement=UnitOfEnergy.KILO_WATT_HOUR,
             entity_registry_enabled_default=True,
         ),
-        SmartLifeSensorEntityDescription(
+        TuyaSensorEntityDescription(
             key=DPCode.CUR_CURRENT,
             name="Current",
             device_class=SensorDeviceClass.CURRENT,
             state_class=SensorStateClass.MEASUREMENT,
             entity_registry_enabled_default=True,
         ),
-        SmartLifeSensorEntityDescription(
+        TuyaSensorEntityDescription(
             key=DPCode.CUR_POWER,
             name="Power",
             device_class=SensorDeviceClass.POWER,
             state_class=SensorStateClass.MEASUREMENT,
             entity_registry_enabled_default=True,
         ),
-        SmartLifeSensorEntityDescription(
+        TuyaSensorEntityDescription(
             key=DPCode.CUR_VOLTAGE,
             name="Voltage",
             device_class=SensorDeviceClass.VOLTAGE,
